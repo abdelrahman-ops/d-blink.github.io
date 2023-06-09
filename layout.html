@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/ori6.jpg" type="image/png">
+
+    <link rel="stylesheet" href="static/styles1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link href="templates/login.html">
+    <link href="../project/templates/movies.html">
+    <link href="../project/templates/tv.html">
+    <link href="../project/templates/anime.html">
+    <link href="../project/templates/list.html">
+    <link href="../project/templates/register.html">
+    <title>D-BLINK</title>
+    <style>
+
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <div style="display: flex;">
+                    <div style="flex: 1;">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="../project/templates/movies.html">Movies</a></li>
+                            <li><a href="../project/templates/tv.html">TV Shows</a></li>
+                            <li><a href="../project/templates/anime.html">Anime</a></li>
+                            <li><a href="../project/templates/register.html">My List</a></li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; text-align: right;">
+                        <div style="float:right; width:50%;">
+                            <li class="nav-item"><a class="nav-link" href="templates/login.html"
+                                    style="background-color: #e50914; color: #ffffff; border: none; padding: 5px 10px; font-size: 18px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Log
+                                    In</a></li>
+                            &nbsp;&nbsp;&nbsp;
+                            <li class="nav-item"><a class="nav-link" href="templates/register.html">New to D-BLINK ?</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="interface">
+                <h1>Welcome to D-BLINK</h1>
+                <p>Stream your favorite movies and TV shows online.</p>
+            </div>
+            <form>
+                <div class="search">
+                    <input class="search-btn" type="search" placeholder="Search..." autofocus>
+                    <button type="submit">Search</button>
+                </div>
+                <br><br> <br><br> <br><br>
+                <div class="container">
+                    <p class="ready1">Stream nonstop with unlimited movies, TV shows, and anime...</p>
+                    <br>
+                    <p class="ready2">Ready to watch? Enter your email to create or restart your membership.</p>
+                    <br>
+                    <input class="email" type="email" id="email-input" placeholder="Email address..." required autofocus
+                        autocomplete="off">
+                    <button id="get-started-button" class="get-started-button" type="button">Get Started &gt;</button>
+                </div>
+            </form>
+
+        </main>
+
+    </div>
+
+    <br><br>
+    <div class="slides-body">
+
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <h3 class="new"><span
+                        style="height: 35px; border: 3px solid darkgoldenrod; border-radius: 3px;"></span>&nbsp; 2023
+                    New Releases<span><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="arrow"
+                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                            <path
+                                d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z">
+                            </path>
+                        </svg></span></h3>
+
+                <br><br><br>
+                <div class="card-wrapper swiper-wrapper">
+                    <!--  -->
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/rt-2cxAiPJk"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe> -->
+                            <div class="card-image">
+                                <img src="images/posters/movies/dragons.jpg" alt="Movie poster" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            
+                            <h2 class="name">Dungeons & Dragons</h2>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/rt-2cxAiPJk"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe> -->
+                            <div class="card-image">
+                                <img src="images/posters/movies/dune.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Dune: Part Two</h2>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/rt-2cxAiPJk"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe> -->
+                            <div class="card-image">
+                                <img src="images/posters/movies/evil.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Evil Dead Rise</h2>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/rt-2cxAiPJk"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe> -->
+                            <div class="card-image">
+                                <img src="images/posters/movies/galaxy.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Guardians of the Galaxy Vol. 3</h2>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/rt-2cxAiPJk"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe> -->
+                            <div class="card-image">
+                                <img src="images/posters/movies/ghosted.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Ghosted</h2>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/rt-2cxAiPJk"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe> -->
+                            <div class="card-image">
+                                <img src="images/posters/movies/mario.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name"> The Super Mario Bros. Movie</h2>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/rt-2cxAiPJk"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe> -->
+                            <div class="card-image">
+                                <img src="images/posters/movies/hunger.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">The Hunger Games</h2>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/rt-2cxAiPJk"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe> -->
+                            <div class="card-image">
+                                <img src="images/posters/movies/scream.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Scream</h2>
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div><br><br>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+        <footer>
+
+            <div class="footer-content">
+      
+              <div class="footer-brand">
+                <img src="../project/assets/images/dblogo.png" alt="" class="footer-logo">
+                <p class="slogan">Movies & TV Shows, Online cinema,
+                  Movie database.</p>
+      
+      
+                <div class="social-link">
+      
+                  <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                  <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                  <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                  <a href="#">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+      
+                </div>
+              </div>
+      
+      
+              <div class="footer-links">
+                <ul>
+      
+                  <h4 class="link-heading">D-BLINK</h4>
+      
+                  <li class="link-item"><a href="#">About us</a></li>
+                  <li class="link-item"><a href="#">My profile</a></li>
+                  <li class="link-item"><a href="#">Pricing plans</a></li>
+                  <li class="link-item"><a href="#">Contacts</a></li>
+      
+                </ul>
+      
+                <ul>
+      
+                  <h4 class="link-heading">Browse</h4>
+      
+                  <li class="link-item"><a href="#">Live Tv</a></li>
+                  <li class="link-item"><a href="#">Live News</a></li>
+                  <li class="link-item"><a href="#">Live Sports</a></li>
+                  <li class="link-item"><a href="#">Streaming Library</a></li>
+      
+                </ul>
+      
+                <ul>
+      
+                  <li class="link-item"><a href="#">TV Shows</a></li>
+                  <li class="link-item"><a href="#">Movies</a></li>
+                  <li class="link-item"><a href="#">Kids</a></li>
+                  <li class="link-item"><a href="#">Collections</a></li>
+      
+                </ul>
+      
+                <ul>
+      
+                  <h4 class="link-heading">Help</h4>
+      
+                  <li class="link-item"><a href="#">Account & Billing</a></li>
+                  <li class="link-item"><a href="#">Plans & Pricing</a></li>
+                  <li class="link-item"><a href="#">Supported devices</a></li>
+                  <li class="link-item"><a href="#">Accessibility</a></li>
+      
+                </ul>
+              </div>
+      
+            </div>
+      
+            <div class="footer-copyright">
+      
+              <div class="copyright">
+                <p>&copy; copyright 2023 D-BLINK</p>
+              </div>
+      
+              <div class="wrapper">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms and conditions</a>
+              </div>
+      
+            </div>
+      
+          </footer>
+
+        <script>
+            // Get a reference to the "Get Started" button element
+            const getStartedButton = document.getElementById("get-started-button");
+
+            // Add an event listener to the button that listens for a "click" event
+            getStartedButton.addEventListener("click", function () {
+                // Get the email input value
+                const emailInput = document.getElementById("email-input");
+                const email = emailInput.value;
+
+                // Store the email in localStorage
+                localStorage.setItem("email", email);
+
+                // Redirect the user to the desired page based on whether the email is in the database
+                const emailExistsInDatabase = checkIfEmailExistsInDatabase(email);
+                if (emailExistsInDatabase) {
+                    window.location.href = "templates/original.html";
+                } else {
+                    window.location.href = "templates/register.html";
+                }
+            });
+
+            function checkIfEmailExistsInDatabase(email) {
+                // Replace this array with your own database of email addresses
+                const database = [
+                    "abdelrahmanataa17@gmail.com"
+                ];
+
+                // Check if the email exists in the database
+                return database.includes(email);
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="../Responsive Card Slider/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/images/ori6.jpg" type="image/png">
+  <title>D-BLINK</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/media_query.css">
+
+  <!--
+    - google font link
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+  <!-- Pages -->
+  <link href="login.html">
+  <link href="movies.html">
+  <link href="tv.html">
+  <link href="anime.html">
+  <link href="list.html">
+  <link href="register.html">
+</head>
+
+<body>
+  
+  <!--
+    - main container
+  -->
+  <div class="container">
+
+    <!--
+      - #HEADER SECTION
+    -->
+
+    <header class="">
+      <div class="navbar">
+
+        <!--
+          - menu button for small screen
+        -->
+        <button class="navbar-menu-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+
+        <!-- <a href="#" class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="">
+        </a> -->
+
+        <!--
+          - navbar navigation
+        -->
+
+        <nav class="">
+          <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="movies.html" class="navbar-link">Movies</a></li>
+            <li><a href="tv.html" class="navbar-link">TV Shows</a></li>
+            <li><a href="anime.html" class="navbar-link">Anime</a></li>
+            <li><a href="register.html" class="navbar-link">My List</a></li>
+            <li> <a href="#category" class="navbar-link">Category</a> </li>
+            
+
+          </ul>
+        </nav>
+
+        <!--
+          - search and sign-in
+        -->
+
+        <div class="navbar-actions">
+
+          <form action="#" class="navbar-form">
+            <!-- <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+            <button class="navbar-form-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <button class="navbar-form-close">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button> -->
+          </form>
+
+
+          <!--
+            - search button for small screen
+          -->
+
+          <!-- <button class="navbar-search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button> -->
+          <button class="nav-item">
+            <a href="../layout.html" class="navbar-signin">
+            <span>Log Out</span>
+            <ion-icon name="log-out-outline"></ion-icon>
+            </a>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+
+
+
+
+    <!--
+      - MAIN SECTION
+    -->
+    <main>
+
+      <!--
+        - #BANNER SECTION
+      -->
+      <div class="bar">
+        <div class="interface">
+            <h1>Welcome to D-BLINK</h1>
+            <p>Stream your favorite movies and TV shows online.</p>
+        </div>
+        <form>
+            <div class="search">
+                <input class="search-btn" type="search" placeholder="Search..." autofocus>
+                <button type="submit">Search</button>
+            </div>
+            <br>
+        </form>
+      </div>
+
+      <section class="banner">
+        <div class="banner-card" >
+
+          <img src="../images/posters/anime/YourName.jpg" class="banner-img" alt="">
+
+          <div class="card-content">
+            <div class="card-info" style="color:rgb(0, 0, 0)">
+
+              <div class="genre">
+                <ion-icon name="film"></ion-icon>
+                <span>Action/Adventure</span>
+              </div>
+
+              <div class="year">
+                <ion-icon name="calendar"></ion-icon>
+                <span>2023</span>
+              </div>
+
+              <div class="duration">
+                <ion-icon name="time"></ion-icon>
+                <span>1h 30m</span>
+              </div>
+
+              <div class="quality">4K</div>
+
+            </div>
+
+            <h2 class="card-title" style="color:black" >Your Name</h2>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- - #MOVIES SECTION -->
+      <section class="movies">
+
+
+        <div class="movies-grid">
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="/project/images/posters/anime/attack.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Attack On Titan: S4</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/bungo.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Bungo-Stray Dogs</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2017</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="/project/images/posters/anime/lock.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>N/A</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Blue Lock</h3>
+
+              <div class="card-info">
+                <span class="genre">Sport</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/str.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.8</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Summer Time Rendering</h3>
+
+              <div class="card-info">
+                <span class="genre">Adventure/Action</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/too.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.2</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Tomodachi Game</h3>
+
+              <div class="card-info">
+                <span class="genre">Sci-fi/Adventure</span>
+                <span class="year">2022</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/bleach2.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.3</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Bleach</h3>
+
+              <div class="card-info">
+                <span class="genre">War/Action</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/conan.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.6</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Conan</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Crime</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/one.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.0</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">One Piece</h3>
+
+              <div class="card-info">
+                <span class="genre">Adventure/Fantasy</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/hunter.png" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>9.0</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">The Dark Knight</h3>
+
+              <div class="card-info">
+                <span class="genre">Hunter X Hunter</span>
+                <span class="year">1999</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/para.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.3</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Parasite</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2012</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/room.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.7</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Classroom Of Elite</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2022</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/naruto.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.9</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Naruto</h3>
+
+              <div class="card-info">
+                <span class="genre">Fantasy/Adventure</span>
+                <span class="year">2005</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/mor.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.6</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Moriarty The Patriot</h3>
+
+              <div class="card-info">
+                <span class="genre">War/Action</span>
+                <span class="year">2022</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/juju.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.6</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Interstellar</h3>
+
+              <div class="card-info">
+                <span class="genre">Jujustu Kaisen</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/demons.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.5</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Demon Slayer</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/death.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Death Note</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Sci-fi</span>
+                <span class="year">2019</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/csm.png" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>5.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Chain-Saw Man</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="movie-card">
+
+            <div class="card-head">
+              <img src="../images/posters/anime/clover.jpg" alt="" class="card-img">
+
+              <div class="card-overlay">
+
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.8</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Black Clover</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Sci-fi</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- - load more button -->
+        <button class="load-more">LOAD MORE</button>
+
+      </section>
+    </main>
+
+
+
+
+
+    <!--
+      - FOOTER SECTION
+    -->
+    <footer>
+
+      <div class="footer-content">
+
+        <div class="footer-brand">
+          <img src="../assets/images/dblogo.png" alt="" class="footer-logo">
+          <p class="slogan">Movies & TV Shows, Online cinema,
+            Movie database.</p>
+
+
+          <div class="social-link">
+
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+
+          </div>
+        </div>
+
+
+        <div class="footer-links">
+          <ul>
+
+            <h4 class="link-heading">D-BLINK</h4>
+
+            <li class="link-item"><a href="#">About us</a></li>
+            <li class="link-item"><a href="#">My profile</a></li>
+            <li class="link-item"><a href="#">Pricing plans</a></li>
+            <li class="link-item"><a href="#">Contacts</a></li>
+
+          </ul>
+
+          <ul>
+
+            <h4 class="link-heading">Browse</h4>
+
+            <li class="link-item"><a href="#">Live Tv</a></li>
+            <li class="link-item"><a href="#">Live News</a></li>
+            <li class="link-item"><a href="#">Live Sports</a></li>
+            <li class="link-item"><a href="#">Streaming Library</a></li>
+
+          </ul>
+
+          <ul>
+
+            <li class="link-item"><a href="#">TV Shows</a></li>
+            <li class="link-item"><a href="#">Movies</a></li>
+            <li class="link-item"><a href="#">Kids</a></li>
+            <li class="link-item"><a href="#">Collections</a></li>
+
+          </ul>
+
+          <ul>
+
+            <h4 class="link-heading">Help</h4>
+
+            <li class="link-item"><a href="#">Account & Billing</a></li>
+            <li class="link-item"><a href="#">Plans & Pricing</a></li>
+            <li class="link-item"><a href="#">Supported devices</a></li>
+            <li class="link-item"><a href="#">Accessibility</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright">
+
+        <div class="copyright">
+          <p>&copy; copyright 2023 D-BLINK</p>
+        </div>
+
+        <div class="wrapper">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms and conditions</a>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/main.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

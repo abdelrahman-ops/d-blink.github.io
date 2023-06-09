@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(25% - 20px);
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-content {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay a {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card-overlay a:hover {
+  background-color: #000;
+  color: #fff;
+}
+    </style>
+    <style>
+        .search-wrapper {
+            position: absolute;
+            transform:translate(-50%, -50%);
+            top:50%;
+            left:50%;
+        }
+    .search-wrapper.active {}
+    .search-wrapper .input-holder {
+    height:70px;
+    width:70px;
+    overflow:hidden;
+    background:rgba(255,255,255,0);
+    border-radius:6px;
+    position:relative;
+    transition:all 0.3s ease-in-out;
+    }
+    .search-wrapper.active .input-holder {width:450px;border-radius:50px;background:rgba(0,0,0,0.5);
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="search-wrapper">
+        <div class="input-holder">
+            <input type="text" class="search-input" placeholder="Type to search" />
+            <button class="search-icon" onclick="searchToggle(this, event);"><span></span> </button>
+        </div>
+        <span class="close" onclick="searchToggle(this, event);"></span>
+    </div>
+    <div class="card-container">
+  <div class="card">
+    <div class="card-content">
+      <h2>Card 1</h2>
+      <p>Some text about card 1.</p>
+    </div>
+    <div class="card-overlay">
+      <h2>Card 1</h2>
+      <p>Some text about card 1.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h2>Card 2</h2>
+      <p>Some text about card 2.</p>
+    </div>
+    <div class="card-overlay">
+      <h2>Card 2</h2>
+      <p>Some text about card 2.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h2>Card 3</h2>
+      <p>Some text about card 3.</p>
+    </div>
+    <div class="card-overlay">
+      <h2>Card 3</h2>
+      <p>Some text about card 3.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h2>Card 4</h2>
+      <p>Some text about card 4.</p>
+    </div>
+    <div class="card-overlay">
+      <h2>Card 4</h2>
+      <p>Some text about card 4.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>
